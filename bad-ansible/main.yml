@@ -106,7 +106,7 @@
       dest: /usr/share/tomcat/webapps/ansible/index.html
 
 - name: deploy postgres
-  hosts: apps
+  #hosts: apps
   gather_facts: false
   become: true
   hosts: appdbs
@@ -140,7 +140,7 @@
   hosts: apps
   gather_facts: false
   become: true
-  hosts: apps
+  #hosts: apps
   tasks:
   - name: install apache
     yum:
